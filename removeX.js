@@ -1,6 +1,9 @@
-//Function (utilizing recursion)  that takes in two parameters, a string and an array to store the outputted string, which returns the original string with all x's removed
+//Function (utilizing recursion)  that takes in two parameters, a string and an array to store the outputted string (does not need to be inputted), which returns the original string with all x's removed
 
 var removeX = function(str, newStr) {	//Takes in two parameters: a string, and an empty array
+    if (newStr === undefined) {		//Allows user to not be required to enter in an empty array to utilize the function
+        newStr = [];
+    }
     if (str.length == 0) {		//If str is empty the function is stopped, this is the base case
         return true;
     }
